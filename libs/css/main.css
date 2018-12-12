@@ -1,0 +1,110 @@
+::selection { color: #fafafa !important; background: #009688 !important }
+::-moz-selection{ color:#fff !important; background: #009688 !important }
+::-webkit-scrollbar-track  { background: #fafafa !important; margin:0 !important }
+::-webkit-scrollbar { width: 7px; height: auto }
+::-webkit-scrollbar-button { width: 0px; height: 0px }
+::-webkit-scrollbar-corner { background: transparent }
+::-webkit-scrollbar-thumb {
+  background: #009688 !important;
+  /* background-clip: padding-box; */
+  min-height: 28px;
+  padding: 100px 0 0;
+  -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),
+                      inset  0 -1px 0 rgba(0,0,0,.07);
+          box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),
+                      inset  0 -1px 0 rgba(0,0,0,.07)
+}
+
+.jdb-right:after,
+.jdb-left:before {
+  content: "";
+  clear: both;
+  display: table-cell
+}
+.jdb-max {
+  max-width: 950px;
+  margin: auto;
+  width: 100%
+}
+.jdb-top { z-index: 999 }
+.jdb-top .jdb-btn:hover { box-shadow: none !important }
+.jdb-btn-block { display: block; width: 100% }
+.jdb-navigation { background-color: #fff; }
+.jdb-navigation a,
+.jdb-overview-2 a {
+  text-decoration: none;
+}
+.jdb-row.jdb-overview-1 > .jdb-third > .fa,
+.jdb-text-shadow-multiple {
+  -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
+          text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
+}
+
+@keyframes navBarSlide {
+  from {top: -56px;}
+  to   {top: 0;}
+}
+body.jdb-fixed-navbar main {
+  margin-top: 55px;
+}
+body.jdb-fixed-navbar .fixed {
+  animation-name: navBarSlide;
+  animation-duration: .5s;
+  position: fixed;
+  display: block;
+  z-index: 9999;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+header nav #jdb-header-mobile-accordion {
+  text-align: center;
+  cursor: default;
+  margin: 0
+}
+header nav #jdb-header-mobile-accordion .jdb-btn-block {
+  box-shadow: 0 2px 4px  0 rgba(0,0,0,.16),
+              0 2px 10px 0 rgba(0,0,0,.12) !important;
+  background: #009688;
+  letter-spacing: 3px;
+  border-radius: 4px;
+  font-size: 18px
+}
+header nav #jdb-header-mobile-accordion .jdb-btn-block:hover,
+header nav .jdb-btn:hover {
+  background-color: #f1f1f1 !important;
+  box-shadow: none !important;
+  border-radius: 4px
+}
+.jdb-top-banner-img {
+  height: 300px;
+  background-image: url(../img/photo-957769.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#jdb-header-mobile-accordion {
+  border-top: 1px solid #000;
+}
+.jdb-overview-1 {
+  text-align: center;
+}
+.jdb-overview-2 {
+  border-bottom: 1px solid #f1f1f1
+}
+.jdb-overview-2 img {
+  height: 100px;
+  margin: auto;
+}
+footer.jdb-page-footer  .jdb-panel {
+  margin-bottom: 0 !important
+}
+@media screen and (max-width:700px) {
+  .jdb-row.jdb-overview-1 > .jdb-third:not(:first-child) {
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+  }
+  .jdb-bar-we-apps .jdb-bar-item {
+    display: contents;
+  }
+}
