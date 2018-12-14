@@ -57,6 +57,14 @@ body.jdb-fixed-navbar .fixed {
   left: 0;
   top: 0;
 }
+body.indexPage main > .jdb-display-container > .jdb-display-middle {
+  max-width: 500px;
+  width: 90%
+}
+body.indexPage main > .jdb-display-container > .jdb-display-middle h2 {
+  border: 1px solid #009688;
+  font-size: 2em
+}
 header nav #jdb-header-mobile-accordion {
   text-align: center;
   cursor: default;
@@ -77,24 +85,23 @@ header nav .jdb-btn:hover {
   border-radius: 4px
 }
 .jdb-top-banner-img {
-  height: 300px;
   background-image: url(../img/photo-957769.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-
+  height: 300px
 }
 #jdb-header-mobile-accordion {
-  border-top: 1px solid #000;
+  border-top: 1px solid #000
 }
 .jdb-overview-1 {
-  text-align: center;
+  text-align: center
 }
 .jdb-overview-2 {
   border-bottom: 1px solid #f1f1f1
 }
 .jdb-overview-2 img {
   height: 100px;
-  margin: auto;
+  margin: auto
 }
 footer.jdb-page-footer  .jdb-panel {
   margin-bottom: 0 !important
@@ -102,9 +109,9 @@ footer.jdb-page-footer  .jdb-panel {
 @media screen and (max-width:700px) {
   .jdb-row.jdb-overview-1 > .jdb-third:not(:first-child) {
     border-top: 1px solid #ccc;
-    padding-top: 30px;
+    padding-top: 30px
   }
   .jdb-bar-we-apps .jdb-bar-item {
-    display: contents;
+    display: contents
   }
 }
